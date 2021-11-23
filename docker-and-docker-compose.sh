@@ -2,7 +2,7 @@
 apt update -y && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean
 apt install etckeeper -y
 apt update -y && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean
-apt-get install -y ca-certificates curl gnupg lsb-release htop
+apt-get install -y ca-certificates curl gnupg lsb-release htop iptables-persistent dnsmasq
 apt update -y && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean
 curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
