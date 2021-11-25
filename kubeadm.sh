@@ -5,4 +5,5 @@ sudo apt update -y
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 sudo apt update -y 
+sudo swapoff -a
 sudo kubeadm init > /home/$USER/output.txt
