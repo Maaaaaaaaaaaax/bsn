@@ -65,7 +65,9 @@ iptables --append FORWARD --in-interface enp0s8 -j ACCEPT
 
 Somit wurden erfolgreich die Regeln eingetragen.
 
- 
+
+sudo apt-get install iptables-persistent
+
 
 Konfiguration der Nodes
 
@@ -94,3 +96,7 @@ service networking restart
 Nun hat ist der Node über die interne Schnittstelle mit dem Router verbunden und hat Zugriff auf das Internet über das Netzwerk 192.168.5.0.
 
 Somit hat man nun einen Debian-Server als NAT-Router konfiguriert.
+
+
+
+route ADD 192.168.5.0 MASK 255.255.255.0 10.1.32.XXX # Für Windows
